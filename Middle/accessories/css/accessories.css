@@ -1,0 +1,76 @@
+/* 기본 스타일 설정 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #F5F0E6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 헤더 */
+header {
+    text-align: center;
+    padding: 2rem 1rem 1rem;
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #f2c306, #c49c1f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+/* 본문 컨테이너 */
+main.subpage {
+    padding: 3rem 2rem;
+    max-width: 960px;
+    margin: auto;
+}
+
+/* 전시 섹션 공통 스타일 */
+.section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.section h2 {
+    margin-top: 0;
+    color: #222;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.content {
+    font-size: 1rem;
+    color: #555;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    font-size: 64px;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 48px;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 600px) {
+    main.subpage {
+        padding: 2rem 1rem;
+    }
+}
