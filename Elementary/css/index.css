@@ -33,11 +33,14 @@ header {
 }
 
 main {
-    flex: 1;
+    flex-grow: 1;
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    width: 100%;
 }
+
+
 
 /* 그라데이션 텍스트 효과 */
 .gradient-text {
@@ -85,13 +88,17 @@ h2 {
 
 .button-group {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    /* 2열로 유지 */
     gap: 2rem;
     justify-items: center;
     align-items: center;
-    padding: 1rem;
     width: 100%;
+    max-width: 800px;
+    /* 버튼 그룹이 너무 커지지 않도록 제한 */
 }
+
+
 
 .btn {
     display: flex;
