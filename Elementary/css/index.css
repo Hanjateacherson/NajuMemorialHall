@@ -215,11 +215,7 @@ footer {
     .btn {
         /* 여기를 수정해요! */
         width: 100%;
-        /* 부모 요소의 가로 공간을 꽉 채워라! */
-        /* max-width: 300px; <-- 이 친구랑 */
-        /* margin: 0 auto; <-- 이 친구는 이제 필요 없어요! */
 
-        /* 나머지 스타일은 그대로 둡니다! */
         display: flex;
         flex-direction: column;
         align-items: center;

@@ -8,6 +8,9 @@
 * {
     margin: 0;
     padding: 0;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
 }
 
 body {
@@ -19,7 +22,7 @@ body {
     min-height: 95vh;
     display: flex;
     flex-direction: column;
-    background: url(/img/KakaoTalk_20250514_152057661.png);
+    background-color: #000;
 }
 
 header {
@@ -37,11 +40,12 @@ main {
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    max-width: 800px;
 }
 
 /* 그라데이션 텍스트 효과 */
 .gradient-text {
-    background-image: linear-gradient(90deg, #333, #444);
+    background-image: linear-gradient(90deg, #fff, #fff);
     background-size: 200% auto;
     background-clip: text;
     -webkit-background-clip: text;
@@ -89,8 +93,7 @@ h2 {
     gap: 2rem;
     justify-items: center;
     align-items: center;
-    padding: 1rem;
-    width: 100%;
+    padding: 0.1rem;
 }
 
 .button-group .btn {
@@ -130,11 +133,10 @@ h2 {
     align-items: center;
     text-decoration: none;
     padding: 0.1rem;
-    border-radius: 15px;
+    border-radius: 0.5rem;
     transition: all 0.4s ease;
-    width: 350px;
-    height: 350px;
-    background-color: rgba(255, 255, 255, 0.9);
+    width: 220px;
+    height: 300px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     transform: translateY(0);
 }
@@ -143,7 +145,7 @@ h2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 0.5rem;
 }
 
 .btn-text {
@@ -152,34 +154,36 @@ h2 {
 }
 
 .primary {
-    border: 2px solid #3498db;
-    color: #3498db;
+    color: white;
+    font-weight: bold;
 }
 
 .primary:hover {
-    background-color: #3498db;
+    border: 4px solid #ebca7a;
     color: white;
     transform: translateY(-10px);
     box-shadow: 0 15px 25px rgba(52, 152, 219, 0.4);
 }
 
 .secondary {
-    border: 2px solid #2ecc71;
-    color: #2ecc71;
+    font-weight: bold;
+
+    color: white;
 }
 
 .secondary:hover {
-    background-color: #2ecc71;
+    border: 4px solid #ebca7a;
     color: white;
     transform: translateY(-10px);
     box-shadow: 0 15px 25px rgba(46, 204, 113, 0.4);
+
 }
 
 /* 버튼 애니메이션 효과 */
 .button-group .btn {
     opacity: 0;
     transform: translateY(30px);
-    animation: fadeUp 0.6s forwards;
+    animation: fadeUp 0.3s forwards;
 }
 
 .button-group .btn:nth-child(1) {
@@ -230,19 +234,12 @@ footer {
     }
 
     .button-group {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
         justify-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .btn {
-        /* 여기를 수정해요! */
-        width: 100%;
-        /* 부모 요소의 가로 공간을 꽉 채워라! */
-        /* max-width: 300px; <-- 이 친구랑 */
-        /* margin: 0 auto; <-- 이 친구는 이제 필요 없어요! */
-
-        /* 나머지 스타일은 그대로 둡니다! */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -250,8 +247,6 @@ footer {
         padding: 0.1rem;
         border-radius: 15px;
         transition: all 0.4s ease;
-        height: 350px;
-        background-color: rgba(255, 255, 255, 0.9);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         transform: translateY(0);
     }

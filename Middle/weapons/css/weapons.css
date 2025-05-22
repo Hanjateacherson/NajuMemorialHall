@@ -10,8 +10,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'PurenJeonnam';
-    background-color: #F5F0E6;
-    color: #333;
+    background-color: #000;
+    color: #fff;
     line-height: 1.6;
     /* 부드러운 스크롤 효과 유지! */
     scroll-behavior: smooth;
@@ -20,12 +20,15 @@ body {
 header {
     text-align: center;
     padding: 3rem 1rem 1rem;
+    color :#fff;
+
 }
 
 /* h1과 h2 사이 간격 줄이기 */
 h2 {
     font-size: 36px;
     margin-bottom: 0;
+    
 }
 
 h1 {
@@ -41,7 +44,7 @@ h1 {
 
 /* 그라데이션 텍스트 효과 */
 .gradient-text {
-    background-image: linear-gradient(90deg, #333, #444);
+    background-image: linear-gradient(90deg, #fff,#fff);
     background-size: 200% auto;
     background-clip: text;
     -webkit-background-clip: text;
@@ -121,14 +124,13 @@ main.subpage {
 
 main h3 {
     font-size: 1.8rem;
-    color: #444;
+    color: #fff;
     margin-bottom: 2rem;
     text-align: center;
 }
 
 /* 각 섹션 디자인 */
 .section {
-    background-color: #fff; /* 배경색 흰색 */
     border-radius: 10px; /* 모서리 둥글게 */
     padding: 2rem; /* 안쪽 여백 */
     margin-bottom: 2rem; /* 아래쪽 여백 (이게 블록 분리 효과를 줘!) */
