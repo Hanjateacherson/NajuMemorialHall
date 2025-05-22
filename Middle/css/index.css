@@ -5,14 +5,6 @@
     font-style: normal;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    background-position: center;
-    justify-content: center;
-    align-items: center;
-}
-
 body {
     font-family: 'PurenJeonnam';
     background-size: cover;
@@ -23,7 +15,19 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #000;
+    overflow-x: hidden;
+    justify-items: center;
+    align-items: center;
+
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* 권장 */
+}
+
 
 header {
     text-align: center;
@@ -36,12 +40,19 @@ header {
 }
 
 main {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    max-width: 800px;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 
 /* 그라데이션 텍스트 효과 */
 .gradient-text {
@@ -80,7 +91,6 @@ h1 {
 
 h2 {
     font-size: 36px;
-    color: #3498db;
     margin-bottom: 0.5rem;
     letter-spacing: 1px;
 
@@ -90,7 +100,7 @@ h2 {
 .button-group {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+    gap: 1rem;
     justify-items: center;
     align-items: center;
     padding: 0.1rem;
@@ -222,6 +232,7 @@ footer {
 }
 
 @media (max-width: 768px) {
+
     h1 {
         font-size: 36px;
         align-items: center;
@@ -236,7 +247,8 @@ footer {
     .button-group {
         justify-items: center;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0.5rem;
     }
 
     .btn {
@@ -252,4 +264,92 @@ footer {
     }
 
     /* ... 다른 모바일 스타일들 ... */
+}
+
+#gallery-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+#gallery-container {
+    display: flex;
+    /* 플렉스 박스 사용 */
+    flex-wrap: wrap;
+    /* 공간 부족 시 자동 줄바꿈 */
+    gap: 10px;
+    /* 아이템 간 간격 */
+}
+
+.gallery-page {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.gallery-page.active {
+    display: flex;
+}
+
+.gallery-page img,
+.gallery-page video {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+.pagination-controls {
+    margin-top: 1rem;
+}
+
+.page-btn {
+    padding: 0.5rem 1rem;
+    margin: 0 0.2rem;
+    border: none;
+    background-color: #ebca7a;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#gallery-container img,
+#gallery-container video {
+    width: 220px;
+    height: 160px;
+    object-fit: cover;
+    margin: 0.5rem;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+/* 모달 스타일 */
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+#modal img,
+#modal video {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
 }

@@ -18,3 +18,41 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+let currentPage = 1;
+
+function showPage(page) {
+    const pages = document.querySelectorAll(".gallery-page");
+    pages.forEach(p => p.classList.remove("active"));
+    const target = document.querySelector(`.gallery-page[data-page="${page}"]`);
+    if (target) {
+        target.classList.add("active");
+        currentPage = page;
+    }
+}
+
+function showNextPage() {
+    showPage(currentPage + 1);
+}
+
+function openModal(src) {
+    const modal = document.getElementById("modal");
+    const img = document.getElementById("modal-img");
+    const video = document.getElementById("modal-video");
+
+    if (src.endsWith(".mp4")) {
+        img.style.display = "none";
+        video.style.display = "block";
+        video.src = src;
+    } else {
+        video.style.display = "none";
+        img.style.display = "block";
+        img.src = src;
+    }
+
+    modal.style.display = "flex";
+}
+
+function closeModal() {
+    document.getElementById("modal").style.display = "none";
+    document.getElementById("modal-video").pause();
+}

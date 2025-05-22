@@ -5,30 +5,35 @@
     font-style: normal;
 }
 
-
 /* 전체 배경 및 기본 폰트 설정 */
 body {
     margin: 0;
     padding: 0;
     font-family: 'PurenJeonnam';
-    background-color: #F5F0E6;
-    color: #333;
+    background-color: #000;
+    color: #fff;
     line-height: 1.6;
-}
-
-h2 {
-    font-size: 54px;
-}
-
-h1 {
-    font-size: 64px;
+    /* 부드러운 스크롤 효과 유지! */
+    scroll-behavior: smooth;
 }
 
 header {
     text-align: center;
-    /* padding: 2rem 1rem 1rem;
-    background-color: #fff; */
-    /* border-bottom: 2px solid #ddd; */
+    padding: 3rem 1rem 1rem;
+    color: #fff;
+
+}
+
+/* h1과 h2 사이 간격 줄이기 */
+h2 {
+    font-size: 36px;
+    margin-bottom: 0;
+
+}
+
+h1 {
+    font-size: 70px;
+    margin-top: 0;
 }
 
 /* 로고 영역 링크 스타일 */
@@ -37,42 +42,73 @@ header {
     color: inherit;
 }
 
+/* 그라데이션 텍스트 효과 */
 .gradient-text {
-    background: linear-gradient(to right, #0698f2, #34cadb);
+    background-image: linear-gradient(90deg, #fff, #fff);
+    background-size: 200% auto;
+    background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
+    color: transparent;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    transition: opacity 1s ease;
 }
 
-/* 네비게이션 바 스타일 */
-.navbar {
-    margin-top: 1.5rem;
+.gradient-text:hover {
+    animation: gradient 3s ease infinite;
 }
 
-.menu {
+/* 내비게이션 바 스타일 (이전과 동일) */
+.main-nav {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.main-nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
     padding: 0;
     margin: 0;
 }
 
-.menu li a {
-    text-decoration: none;
-    font-weight: bold;
-    padding: 0.8rem 1.5rem;
-    border-radius: 10px;
-    background-color: #f2c306;
-    color: #fff;
-    transition: background-color 0.3s, transform 0.2s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.main-nav li {
+    display: inline-block;
+    /* 가로로 나열 유지 */
+    margin: 0 10px;
+    /* 버튼 사이 간격 */
 }
 
-.menu li a:hover {
-    background-color: #caa000;
-    transform: translateY(-3px);
+/* ✨ 내비게이션 링크를 흰색 버튼 스타일로 변경! ✨ */
+.main-nav a {
+    display: inline-block;
+
+    text-decoration: none;
+
+    background-color: rgba(128, 128, 128, 0.4);
+
+    color: #fff;
+
+    padding: 10px 20px;
+
+    font-size: 1.5rem;
+
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+
+    border-radius: 1rem;
 }
+
+/* ✨ 마우스 올렸을 때 (hover) 스타일 변경 ✨ */
+.main-nav a:hover {
+    background-color: #eee;
+    /* 배경색을 아주 살짝 회색으로 */
+    color: #000;
+    /* 글자색 더 진하게 */
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+    /* 그림자 진하게 */
+    transform: translateY(-2px);
+    /* 살짝 위로 뜨는 효과 */
+}
+
 
 /* 본문 영역 */
 main.subpage {
@@ -83,68 +119,75 @@ main.subpage {
 
 main h3 {
     font-size: 1.8rem;
-    color: #444;
+    color: #fff;
     margin-bottom: 2rem;
     text-align: center;
 }
 
 /* 각 섹션 디자인 */
 .section {
-    background-color: #fff;
     border-radius: 10px;
+    /* 모서리 둥글게 */
     padding: 2rem;
+    /* 안쪽 여백 */
     margin-bottom: 2rem;
+    /* 아래쪽 여백 (이게 블록 분리 효과를 줘!) */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    /* 그림자 효과 */
+    /* ... (나머지 스크롤 관련 속성들) ... */
 }
 
-.section h2 {
-    margin-top: 0;
-    color: #222;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+/* ... (나머지 CSS 코드는 동일) ... */
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
-.content {
-    font-size: 1rem;
-    color: #555;
+
+/* ... (나머지 main, section, content, video-group, media 쿼리 등 스타일은 동일) ... */
+
+/* Section1: 2열 레이아웃 */
+#section1 .video-group {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* 반응형으로 2열 비슷하게 */
 }
 
-/* 반응형 지원 */
-@media (max-width: 600px) {
-    .menu {
-        flex-direction: column;
-        align-items: center;
-    }
+/* Section2: 3열 레이아웃 */
+#section2 .video-group {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* 반응형으로 3열 비슷하게 */
+}
 
-    .menu li a {
-        width: 80%;
-        text-align: center;
-    }
 
-    main.subpage {
-        padding: 2rem 1rem;
-    }
+.video-group video {
+    /* width: 100%; */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .video-group {
     display: grid;
     gap: 1rem;
     justify-content: center;
+    /* ✅ 그리드 전체를 가운데 정렬 */
+    justify-items: center;
+    /* ✅ 각 비디오 요소 자체를 가운데 정렬 */
 }
 
-/* Section1: 3x2 레이아웃 */
-#section1 .video-group {
-    grid-template-columns: repeat(2, 1fr);
-}
+@media (max-width: 768px) {
+    .main-nav a {
+        font-size: 1rem;
+    }
 
-/* Section2: 2x2 레이아웃 */
-#section2 .video-group {
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.video-group video {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }

@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>자랑스러운 나주 알기, 영산강 메모리얼홀</title>
+    <title>자랑스러운 나주 알기, 내가 만드는 3D 역사박물관</title>
     <link rel="stylesheet" href="/Elementary/css/index.css">
-    <script src="/js/index.js" defer></script>
+    <script src="/Elementary/js/index.js" defer></script>
 
     <link rel="icon"
         href="https://blogpfthumb-phinf.pstatic.net/MjAyMjExMjhfMjA1/MDAxNjY5NjA4NjA3NjMy.mbrLBjk3guOg1OryP1m2XNSiSUfCJ8_6wcOmoKUkiacg.e8xj8913WZgbI0m5nA8P118M3Qn5qqu8UnZnDXdNqq0g.JPEG.threed0724/%EB%9C%A8%EB%A6%AC%EB%94%94_%EB%AF%B8%EB%94%94%EC%96%B4_%EB%A1%9C%EA%B3%A0.jpg/%25EB%259C%25A8%25EB%25A6%25AC%25EB%2594%2594%2B%25EB%25AF%25B8%25EB%2594%2594%25EC%2596%25B4%2B%25EB%25A1%259C%25EA%25B3%25A0.jpg"
@@ -16,31 +16,91 @@
 <body>
     <header>
         <a href="../index.html" class="logo-link">
-            <h2 class="gradient-text">영산강 메모리얼홀</h2>
-            <h1 class="gradient-text">디지털 박물관</h1>
+            <h1 class="gradient-text">자랑스러운 나주 알기</h1>
+            <h2 class="gradient-text">내가 만드는 3D 역사박물관</h2>
         </a>
     </header>
     <main>
+        <h2 class="section-title">🎨 Exhibitions</h2>
         <div class="button-group">
             <a href="/Elementary/block1/block1.html" class="btn primary">
-                <img src="/api/placeholder/300/200" alt="목사내아 이미지">
-                <span class="btn-label">목사내아</span>
+                <img src="/img/목사를 지켜라.png" alt="목사내아 이미지">
+                <span class="btn-label">평화의 하늘, 동학 드론 협상 작전</span>
             </a>
             <a href="/Elementary/block2/block2.html" class="btn secondary">
-                <img src="/api/placeholder/300/200" alt="금성관 이미지">
-                <span class="btn-label">금성관</span>
+                <img src="/img/마이크.png" alt="금성관 이미지">
+                <span class="btn-label">목사를 지켜라! 백만볼트 수호자</span>
             </a>
             <a href="/Elementary/block3/block3.html" class="btn primary">
-                <img src="/api/placeholder/300/200" alt="금성토평비">
-                <span class="btn-label">금성토평비</span>
+                <img src="/img/동학농민.png" alt="금성토평비">
+                <span class="btn-label">마이크로 금성관을 구하라</span>
             </a>
             <a href="/Elementary/block4/block4.html" class="btn secondary" aria-label="은행나무에 대한 정보 보기">
-                <img src="/api/placeholder/300/200" alt="은행나무">
-                <span class="btn-label">은행나무</span>
+                <img src="/img/은행나무.png" alt="은행나무">
+                <span class="btn-label">시간을 건너, 은행나무를 지켜라❗</span>
             </a>
         </div>
 
     </main>
+    <section id="gallery-section">
+        <h2 class="gradient-text"> Gallery</h2>
+
+        <div id="gallery-container">
+            <!-- 페이지 1 -->
+            <div class="gallery-page active" data-page="1">
+                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=92f2ed5b-37b3-49dc-b260-3fffe502d85c"
+                    alt="이미지1" onclick="openModal(this.src)" />
+                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=0e9e5951-aed4-4728-91ce-1c9cf4e7d429"
+                    alt="이미지2" onclick="openModal(this.src)" />
+                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=92f2ed5b-37b3-49dc-b260-3fffe502d85c"
+                    alt="이미지1" onclick="openModal(this.src)" />
+                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=0e9e5951-aed4-4728-91ce-1c9cf4e7d429"
+                    alt="이미지2" onclick="openModal(this.src)" />
+                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=92f2ed5b-37b3-49dc-b260-3fffe502d85c"
+                    alt="이미지1" onclick="openModal(this.src)" />
+                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=0e9e5951-aed4-4728-91ce-1c9cf4e7d429"
+                    alt="이미지2" onclick="openModal(this.src)" />
+                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=92f2ed5b-37b3-49dc-b260-3fffe502d85c"
+                    alt="이미지1" onclick="openModal(this.src)" />
+                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=0e9e5951-aed4-4728-91ce-1c9cf4e7d429"
+                    alt="이미지2" onclick="openModal(this.src)" />
+                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=92f2ed5b-37b3-49dc-b260-3fffe502d85c"
+                    alt="이미지1" onclick="openModal(this.src)" />
+                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=0e9e5951-aed4-4728-91ce-1c9cf4e7d429"
+                    alt="이미지2" onclick="openModal(this.src)" />
+                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=92f2ed5b-37b3-49dc-b260-3fffe502d85c"
+                    alt="이미지1" onclick="openModal(this.src)" />
+                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=0e9e5951-aed4-4728-91ce-1c9cf4e7d429"
+                    alt="이미지2" onclick="openModal(this.src)" />
+                <video src="/Media/유물1_돌도끼.mp4" controls onclick="openModal(this.src)"></video>
+                <!-- ... 최대 10개 정도 -->
+            </div>
+
+            <!-- 페이지 2 -->
+            <div class="gallery-page" data-page="2">
+                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=92f2ed5b-37b3-49dc-b260-3fffe502d85c"
+                    alt="이미지1" onclick="openModal(this.src)" />
+                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=0e9e5951-aed4-4728-91ce-1c9cf4e7d429"
+                    alt="이미지2" onclick="openModal(this.src)" />
+                <video src="video2.mp4" controls></video>
+                <!-- ... -->
+            </div>
+
+            <!-- 필요한 만큼 페이지 추가 -->
+        </div>
+
+        <div class="pagination-controls">
+            <button class="page-btn" onclick="showPage(1)">1</button>
+            <button class="page-btn" onclick="showPage(2)">2</button>
+            <button class="page-btn" onclick="showNextPage()">다음</button>
+        </div>
+        <!-- 모달 레이아웃 -->
+        <div id="modal" onclick="closeModal()">
+            <span class="close-btn">&times;</span>
+            <img id="modal-img" />
+            <video id="modal-video" controls></video>
+        </div>
+    </section>
 
     <!-- 하단 footer -->
     <footer>

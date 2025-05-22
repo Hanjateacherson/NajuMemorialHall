@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>자랑스러운 나주 알기, 영산강 메모리얼홀</title>
     <link rel="stylesheet" href="/Middle/css/index.css">
-    <script src="/js/index.js" defer></script>
+    <script src="/Middle/js/index.js" defer></script>
 
     <link rel="icon"
         href="https://blogpfthumb-phinf.pstatic.net/MjAyMjExMjhfMjA1/MDAxNjY5NjA4NjA3NjMy.mbrLBjk3guOg1OryP1m2XNSiSUfCJ8_6wcOmoKUkiacg.e8xj8913WZgbI0m5nA8P118M3Qn5qqu8UnZnDXdNqq0g.JPEG.threed0724/%EB%9C%A8%EB%A6%AC%EB%94%94_%EB%AF%B8%EB%94%94%EC%96%B4_%EB%A1%9C%EA%B3%A0.jpg/%25EB%259C%25A8%25EB%25A6%25AC%25EB%2594%2594%2B%25EB%25AF%25B8%25EB%2594%2594%25EC%2596%25B4%2B%25EB%25A1%259C%25EA%25B3%25A0.jpg"
@@ -21,7 +21,9 @@
         </a>
     </header>
     <main>
+        <h2 class="section-title">Exhibitions</h2>
         <div class="button-group">
+
             <a href="/Middle/weapons/weapons.html" class="btn primary">
                 <img src="/img/나주 백제 마한시대 무기 이미지 만들어줘.png" alt="무기 이미지">
                 <span class="btn-label">무기</span>
@@ -43,6 +45,67 @@
         </div>
 
     </main>
+    <section id="gallery-section">
+        <h2 class="gradient-text">Gallery</h2>
+
+        <div id="gallery-container">
+            <!-- 페이지 1 -->
+            <div class="gallery-page active" data-page="1">
+                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=92f2ed5b-37b3-49dc-b260-3fffe502d85c"
+                    alt="이미지1" onclick="openModal(this.src)" />
+                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=0e9e5951-aed4-4728-91ce-1c9cf4e7d429"
+                    alt="이미지2" onclick="openModal(this.src)" />
+                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=92f2ed5b-37b3-49dc-b260-3fffe502d85c"
+                    alt="이미지1" onclick="openModal(this.src)" />
+                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=0e9e5951-aed4-4728-91ce-1c9cf4e7d429"
+                    alt="이미지2" onclick="openModal(this.src)" />
+                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=92f2ed5b-37b3-49dc-b260-3fffe502d85c"
+                    alt="이미지1" onclick="openModal(this.src)" />
+                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=0e9e5951-aed4-4728-91ce-1c9cf4e7d429"
+                    alt="이미지2" onclick="openModal(this.src)" />
+                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=92f2ed5b-37b3-49dc-b260-3fffe502d85c"
+                    alt="이미지1" onclick="openModal(this.src)" />
+                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=0e9e5951-aed4-4728-91ce-1c9cf4e7d429"
+                    alt="이미지2" onclick="openModal(this.src)" />
+                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=92f2ed5b-37b3-49dc-b260-3fffe502d85c"
+                    alt="이미지1" onclick="openModal(this.src)" />
+                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=0e9e5951-aed4-4728-91ce-1c9cf4e7d429"
+                    alt="이미지2" onclick="openModal(this.src)" />
+                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=92f2ed5b-37b3-49dc-b260-3fffe502d85c"
+                    alt="이미지1" onclick="openModal(this.src)" />
+                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=0e9e5951-aed4-4728-91ce-1c9cf4e7d429"
+                    alt="이미지2" onclick="openModal(this.src)" />
+                <video src="/Media/유물1_돌도끼.mp4" controls onclick="openModal(this.src)"></video>
+                <!-- ... 최대 10개 정도 -->
+            </div>
+
+            <!-- 페이지 2 -->
+            <div class="gallery-page" data-page="2">
+                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=92f2ed5b-37b3-49dc-b260-3fffe502d85c"
+                    alt="이미지1" onclick="openModal(this.src)" />
+                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=0e9e5951-aed4-4728-91ce-1c9cf4e7d429"
+                    alt="이미지2" onclick="openModal(this.src)" />
+                <video src="video2.mp4" controls></video>
+                <!-- ... -->
+            </div>
+
+            <!-- 필요한 만큼 페이지 추가 -->
+        </div>
+
+        <div class="pagination-controls">
+            <button class="page-btn" onclick="showPage(1)">1</button>
+            <button class="page-btn" onclick="showPage(2)">2</button>
+            <button class="page-btn" onclick="showNextPage()">다음</button>
+        </div>
+        <!-- 모달 레이아웃 -->
+        <div id="modal" onclick="closeModal()">
+            <span class="close-btn">&times;</span>
+            <img id="modal-img" />
+            <video id="modal-video" controls></video>
+        </div>
+    </section>
+
+
 
     <!-- 하단 footer -->
     <footer>
