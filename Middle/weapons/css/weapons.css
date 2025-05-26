@@ -5,6 +5,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Bazzi';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/Bazzi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* 전체 배경 및 기본 폰트 설정 */
 body {
     margin: 0;
@@ -15,6 +22,9 @@ body {
     line-height: 1.6;
     /* 부드러운 스크롤 효과 유지! */
     scroll-behavior: smooth;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 header {
@@ -190,4 +200,23 @@ main h3 {
         font-size: 1rem;
     }
 
+}
+
+.postit {
+    padding: 10px;
+    line-height: 1.6;
+    font-size: 24px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Bazzi';
+}
+
+.center-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
 }

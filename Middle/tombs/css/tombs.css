@@ -1,4 +1,12 @@
 /* 기본 스타일 설정 */
+
+@font-face {
+    font-family: 'Ownglyph_corncorn-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2412-1@1.0/Ownglyph_corncorn-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -61,4 +69,23 @@ main.subpage {
     main.subpage {
         padding: 2rem 1rem;
     }
+}
+
+.postit {
+    padding: 10px;
+    line-height: 1.6;
+    font-size: 24px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Ownglyph_corncorn-Rg';
+}
+
+.center-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
 }

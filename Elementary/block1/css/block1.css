@@ -5,7 +5,21 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Bazzi';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/Bazzi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* 전체 배경 및 기본 폰트 설정 */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -94,7 +108,6 @@ header h2 {
     border-radius: 1rem;
 }
 
-/* ✨ 마우스 올렸을 때 (hover) 스타일 변경 ✨ */
 .main-nav a:hover {
     background-color: #eee;
     /* 배경색을 아주 살짝 회색으로 */
@@ -187,4 +200,23 @@ main h3 {
         font-size: 1rem;
     }
 
+}
+
+.postit {
+    padding: 10px;
+    line-height: 1.6;
+    font-size: 24px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Bazzi';
+}
+
+.center-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
 }
