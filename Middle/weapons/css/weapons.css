@@ -64,7 +64,7 @@ h1 {
 /* 내비게이션 바 스타일 (이전과 동일) */
 .main-nav {
     text-align: center;
-    margin-bottom: 2rem;
+    margin: 2rem;
 }
 
 .main-nav ul {
@@ -132,7 +132,7 @@ main h3 {
 .section {
     border-radius: 10px;
     /* 모서리 둥글게 */
-    padding: 2rem;
+    padding: 1rem;
     /* 안쪽 여백 */
     margin-bottom: 2rem;
     /* 아래쪽 여백 (이게 블록 분리 효과를 줘!) */
@@ -197,7 +197,7 @@ main h3 {
 }
 
 .postit {
-    padding: 10px;
+
     line-height: 1.6;
     font-size: 24px;
     position: relative;
