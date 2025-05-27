@@ -18,6 +18,7 @@ body {
     overflow-x: hidden;
     justify-items: center;
     align-items: center;
+
 }
 
 * {
@@ -46,18 +47,23 @@ main {
     padding: 1rem;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
 /* 그라데이션 텍스트 효과 */
 .gradient-text {
     background-image: linear-gradient(90deg, #fff, #fff);
-    background-size: auto;
-
+    background-size: 200% auto;
+    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
     transition: opacity 1s ease;
 }
-
-
 
 .gradient-text:hover {
     animation: gradient 3s ease infinite;
@@ -131,7 +137,6 @@ h2 {
 }
 
 
-
 .btn {
     display: flex;
     flex-direction: column;
@@ -157,7 +162,6 @@ h2 {
     font-size: 1.4rem;
     font-weight: bold;
 }
-
 .primary {
     color: white;
     font-weight: bold;
@@ -227,6 +231,7 @@ footer {
 }
 
 @media (max-width: 768px) {
+
     h1 {
         font-size: 36px;
         align-items: center;
@@ -250,7 +255,7 @@ footer {
         flex-direction: column;
         align-items: center;
         text-decoration: none;
-        padding: 0.5rem;
+        padding: 0.1rem;
         border-radius: 15px;
         transition: all 0.4s ease;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -258,69 +263,6 @@ footer {
     }
 
     /* ... 다른 모바일 스타일들 ... */
-}
-
-.media-gallery {
-    padding: 2rem 1rem;
-    background-color: #111;
-    text-align: center;
-}
-
-.section-title {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: #fff;
-}
-
-.gallery-container {
-    position: relative;
-    overflow: hidden;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.gallery-slider {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.gallery-item {
-    min-width: 100%;
-    box-sizing: border-box;
-    padding: 0 1rem;
-}
-
-.gallery-item img,
-.gallery-item video {
-    width: 100%;
-    max-height: 400px;
-    border-radius: 1rem;
-    object-fit: cover;
-}
-
-.gallery-nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
-    font-size: 2rem;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    z-index: 10;
-}
-
-.gallery-nav:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-.gallery-nav.prev {
-    left: 10px;
-}
-
-.gallery-nav.next {
-    right: 10px;
 }
 
 #gallery-section {
