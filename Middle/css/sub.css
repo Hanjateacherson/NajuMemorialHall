@@ -19,6 +19,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-weight: bold;
 }
 
 header {
@@ -205,7 +206,7 @@ main h3 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-family: 'Bazzi';
+
 }
 
 .center-box {

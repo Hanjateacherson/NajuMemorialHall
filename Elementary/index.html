@@ -20,94 +20,40 @@
             <h2 class="gradient-text">내가 만드는 3D 역사박물관</h2>
         </a>
     </header>
+
+    <div class="gallery-button-top">
+        <a href="/Elementary/gallery.html" class="gallery-btn">📷 갤러리로 이동하기</a>
+    </div>
+
     <main>
         <h2 class="section-title">🎨 Exhibitions</h2>
         <div class="button-group">
-            <a href="/Elementary/block1/block1.html" class="btn primary">
-                <img src="/img/목사를 지켜라.png" alt="목사내아 이미지">
+            <a href="/Elementary/block1.html" class="exhibition-btn">
+                <img src="/img/목사를 지켜라.png" alt="목사를 지켜라! 백만볼트 수호자">
                 <span class="btn-label">목사를 지켜라! 백만볼트 수호자</span>
             </a>
-            <a href="/Elementary/block2/block2.html" class="btn secondary">
-                <img src="/img/마이크.png" alt="금성관 이미지">
+            <a href="/Elementary/block2.html" class="exhibition-btn">
+                <img src="/img/마이크.png" alt="마이크로 금성관을 구하라">
                 <span class="btn-label">마이크로 금성관을 구하라</span>
             </a>
-            <a href="/Elementary/block3/block3.html" class="btn primary">
-                <img src="/img/KakaoTalk_20250527_131241688.png" alt="금성토평비">
+            <a href="/Elementary/block3.html" class="exhibition-btn">
+                <img src="/img/KakaoTalk_20250527_131241688.png" alt="평화의 하늘, 동학 드론 협상 작전">
                 <span class="btn-label">평화의 하늘, 동학 드론 협상 작전</span>
             </a>
-            <a href="/Elementary/block4/block4.html" class="btn secondary" aria-label="은행나무에 대한 정보 보기">
-                <img src="/img/은행나무.png" alt="은행나무">
+            <a href="/Elementary/block4.html" class="exhibition-btn">
+                <img src="/img/은행나무.png" alt="시간을 건너, 은행나무를 지켜라!">
                 <span class="btn-label">시간을 건너, 은행나무를 지켜라!</span>
             </a>
         </div>
-
     </main>
-    <section id="gallery-section">
-        <h2 class="gradient-text"> Gallery</h2>
 
-        <div id="gallery-container">
-            <!-- 페이지 1 -->
-            <div class="gallery-page active" data-page="1">
-                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=92f2ed5b-37b3-49dc-b260-3fffe502d85c"
-                    alt="이미지1" onclick="openModal(this.src)" />
-                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=0e9e5951-aed4-4728-91ce-1c9cf4e7d429"
-                    alt="이미지2" onclick="openModal(this.src)" />
-                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=92f2ed5b-37b3-49dc-b260-3fffe502d85c"
-                    alt="이미지1" onclick="openModal(this.src)" />
-                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=0e9e5951-aed4-4728-91ce-1c9cf4e7d429"
-                    alt="이미지2" onclick="openModal(this.src)" />
-                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=92f2ed5b-37b3-49dc-b260-3fffe502d85c"
-                    alt="이미지1" onclick="openModal(this.src)" />
-                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=0e9e5951-aed4-4728-91ce-1c9cf4e7d429"
-                    alt="이미지2" onclick="openModal(this.src)" />
-                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=92f2ed5b-37b3-49dc-b260-3fffe502d85c"
-                    alt="이미지1" onclick="openModal(this.src)" />
-                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=0e9e5951-aed4-4728-91ce-1c9cf4e7d429"
-                    alt="이미지2" onclick="openModal(this.src)" />
-                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=92f2ed5b-37b3-49dc-b260-3fffe502d85c"
-                    alt="이미지1" onclick="openModal(this.src)" />
-                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=0e9e5951-aed4-4728-91ce-1c9cf4e7d429"
-                    alt="이미지2" onclick="openModal(this.src)" />
-                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=92f2ed5b-37b3-49dc-b260-3fffe502d85c"
-                    alt="이미지1" onclick="openModal(this.src)" />
-                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=0e9e5951-aed4-4728-91ce-1c9cf4e7d429"
-                    alt="이미지2" onclick="openModal(this.src)" />
-                <video src="/Media/유물1_돌도끼.mp4" controls onclick="openModal(this.src)"></video>
-                <!-- ... 최대 10개 정도 -->
-            </div>
-
-            <!-- 페이지 2 -->
-            <div class="gallery-page" data-page="2">
-                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=92f2ed5b-37b3-49dc-b260-3fffe502d85c"
-                    alt="이미지1" onclick="openModal(this.src)" />
-                <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=0e9e5951-aed4-4728-91ce-1c9cf4e7d429"
-                    alt="이미지2" onclick="openModal(this.src)" />
-                <video src="video2.mp4" controls></video>
-                <!-- ... -->
-            </div>
-
-            <!-- 필요한 만큼 페이지 추가 -->
-        </div>
-
-        <div class="pagination-controls">
-            <button class="page-btn" onclick="showPage(1)">1</button>
-            <button class="page-btn" onclick="showPage(2)">2</button>
-            <button class="page-btn" onclick="showNextPage()">다음</button>
-        </div>
-        <!-- 모달 레이아웃 -->
-        <div id="modal" onclick="closeModal()">
-            <span class="close-btn">&times;</span>
-            <img id="modal-img" />
-            <video id="modal-video" controls></video>
-        </div>
-    </section>
-
-    <!-- 하단 footer -->
     <footer>
         <div class="footer">
             COPYRIGHT © by threed0724. ALL RIGHTS RESERVED
         </div>
     </footer>
 </body>
+
+</html>
 
 </html>
