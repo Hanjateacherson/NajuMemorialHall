@@ -162,6 +162,7 @@ h2 {
     font-size: 1.4rem;
     font-weight: bold;
 }
+
 .primary {
     color: white;
     font-weight: bold;
@@ -230,7 +231,7 @@ footer {
     letter-spacing: 1px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
 
     h1 {
         font-size: 36px;
