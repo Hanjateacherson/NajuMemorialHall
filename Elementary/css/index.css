@@ -49,13 +49,15 @@ main {
 /* 그라데이션 텍스트 효과 */
 .gradient-text {
     background-image: linear-gradient(90deg, #fff, #fff);
-    background-size: 200% auto;
-    background-clip: text;
+    background-size: auto;
+
     -webkit-background-clip: text;
     color: transparent;
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
     transition: opacity 1s ease;
 }
+
+
 
 .gradient-text:hover {
     animation: gradient 3s ease infinite;
@@ -75,19 +77,17 @@ main {
     }
 }
 
-h1 {
-    margin-bottom: 1rem;
-    font-size: 70px;
+header h1 {
+    font-size: 64px;
+    margin: 2rem;
+    margin-bottom: 5px;
     letter-spacing: 2px;
 }
 
-h2 {
-    font-size: 36px;
-    color: #3498db;
-    margin-bottom: 0.5rem;
-    letter-spacing: 1px;
-
-
+header h2 {
+    font-size: 34px;
+    margin: 0;
+    letter-spacing: 2px;
 }
 
 .button-group {
